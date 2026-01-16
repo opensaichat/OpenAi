@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NeuroAI</title>
+  <meta charset="UTF-8">
+  <title>NeuroAI — ИИ на русском</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="background"></div>
+<header class="header">
+  <div class="logo">🧠 NeuroAI</div>
+  <div class="menu">☰</div>
+</header>
 
-<div class="app">
-  <header>
-    <div class="logo">🧠 Neuro<span>AI</span></div>
-    <p>Искусственный интеллект нового поколения</p>
-  </header>
+<section class="hero">
+  <span class="badge">Работает на базе AI</span>
+  <h1>Нейросеть нового поколения<br>на русском языке</h1>
+  <p>Генерируй тексты, код, идеи и ответы за секунды</p>
+  <a href="register.html" class="main-btn">Попробовать сейчас</a>
 
-  <div id="chat" class="chat">
-    <div class="msg bot">
-      Привет 👋 Я NeuroAI. Задай любой вопрос.
+  <img src="https://i.imgur.com/8QZ7Z5G.png" class="hero-img">
+</section>
+
+<section class="trust">
+  <h2>Доверяют миллионы</h2>
+
+  <div class="cards">
+    <div class="card">
+      ⭐⭐⭐⭐⭐
+      <p><b>Адам К.</b></p>
+      <span>Отличный ИИ, работает быстро и без VPN</span>
+    </div>
+
+    <div class="card">
+      ⭐⭐⭐⭐⭐
+      <p><b>Denis M.</b></p>
+      <span>Использую каждый день для работы и идей</span>
+    </div>
+
+    <div class="card">
+      ⭐⭐⭐⭐⭐
+      <p><b>Мария</b></p>
+      <span>Очень простой и понятный интерфейс</span>
     </div>
   </div>
+</section>
 
-  <div class="input-area">
-    <input id="userInput" placeholder="Напиши сообщение..." />
-    <button onclick="sendMessage()">➜</button>
-  </div>
-</div>
+<footer class="footer">
+  © 2026 NeuroAI
+</footer>
 
-<script src="script.js"></script>
 </body>
 </html>
