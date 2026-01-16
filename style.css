@@ -91,3 +91,21 @@ body {
   color: #888;
   font-size: 13px;
 }
+.card{
+  background:#fff;
+  padding:30px;
+  width:300px;
+  border-radius:14px;
+  box-shadow:0 20px 40px rgba(0,0,0,.1);
+  text-align:center;
+}
+
+.card input{
+  width:100%;
+  margin:10px 0;
+}
+
+.small{
+  margin-top:15px;
+  font-size:14px;
+}
