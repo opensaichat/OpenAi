@@ -5,6 +5,49 @@
   <title>NeuroAI — ИИ на русском</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .hero{
+      text-align:center;
+      padding:80px 20px 60px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .hero-img-wrap{
+      margin-top:50px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      position:relative;
+    }
+
+    .hero-img-wrap::before{
+      content:"";
+      position:absolute;
+      width:480px;
+      height:480px;
+      background:radial-gradient(circle, rgba(0,255,200,.35), transparent 70%);
+      filter:blur(45px);
+      z-index:0;
+    }
+
+    .hero-img{
+      width:420px;
+      max-width:90%;
+      border-radius:22px;
+      box-shadow:0 30px 80px rgba(0,0,0,.35);
+      position:relative;
+      z-index:1;
+      animation:float 6s ease-in-out infinite;
+    }
+
+    @keyframes float{
+      0%{transform:translateY(0)}
+      50%{transform:translateY(-14px)}
+      100%{transform:translateY(0)}
+    }
+  </style>
 </head>
 <body>
 
@@ -19,7 +62,10 @@
   <p>Генерируй тексты, код, идеи и ответы за секунды</p>
   <a href="register.html" class="main-btn">Попробовать сейчас</a>
 
-  <img src="https://i.imgur.com/8QZ7Z5G.png" class="hero-img">
+  <!-- КРАСИВАЯ КАРТИНКА -->
+  <div class="hero-img-wrap">
+    <img src="https://i.imgur.com/8QZ7Z5G.png" class="hero-img" alt="NeuroAI">
+  </div>
 </section>
 
 <section class="trust">
@@ -40,7 +86,7 @@
 
     <div class="card">
       ⭐⭐⭐⭐⭐
-      <p><b>Мария</b></p>
+      <p><b>Марьям</b></p>
       <span>Очень простой и понятный интерфейс</span>
     </div>
   </div>
