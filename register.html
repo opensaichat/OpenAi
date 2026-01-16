@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Регистрация</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Регистрация — NeuroAI</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body class="center">
 
-  <div class="card">
-    <h2>Регистрация</h2>
+<div class="card">
+  <h2>Регистрация</h2>
 
-    <input type="text" id="name" placeholder="Имя">
-    <input type="email" id="email" placeholder="Email">
+  <input id="name" placeholder="Имя">
+  <input id="email" placeholder="Email">
+  <input id="pass" type="password" placeholder="Пароль">
 
-    <button class="btn" onclick="register()">Продолжить</button>
-  </div>
+  <button class="btn" onclick="register()">Создать аккаунт</button>
+
+  <p class="small">Уже есть аккаунт?
+    <a href="chat.html">Войти</a>
+  </p>
+</div>
 
 <script>
 function register(){
-  const name = document.getElementById('name').value;
-  if(!name) return alert('Введите имя');
-  localStorage.setItem('user', name);
-  window.location.href = 'chat.html';
+  const user = {
+    name: name.value,
+    email: email.value,
+    pass: pass.value
+  };
+
+  if(!user.name || !user.email || !user.pass){
+    alert("Заполни все поля");
+    return;
+  }
+
+  localStorage.setItem("user", JSON.stringify(user));
+  location.href = "chat.html";
 }
 </script>
 
