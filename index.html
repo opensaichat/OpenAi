@@ -3,23 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Neuro AI</title>
+  <title>NeuroAI</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="bg"></div>
+<div class="background"></div>
 
-<div class="container">
+<div class="app">
   <header>
-    <h1>Neuro<span>AI</span></h1>
+    <div class="logo">🧠 Neuro<span>AI</span></div>
     <p>Искусственный интеллект нового поколения</p>
   </header>
 
-  <div id="chat"></div>
+  <div id="chat" class="chat">
+    <div class="msg bot">
+      Привет 👋 Я NeuroAI. Задай любой вопрос.
+    </div>
+  </div>
 
-  <div class="input-box">
-    <input id="userInput" placeholder="Задай вопрос нейросети..." />
+  <div class="input-area">
+    <input id="userInput" placeholder="Напиши сообщение..." />
     <button onclick="sendMessage()">➜</button>
   </div>
 </div>
